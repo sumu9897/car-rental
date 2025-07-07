@@ -31,7 +31,7 @@ A professional-grade, scalable car rental web application that allows users to b
 ---
 
 ## 📂 Project Structure (Example)
-
+```bash
 /client # Frontend (React or Next.js)
 /server # Backend (Express.js / Node.js)
 /uploads # Local image storage (if applicable)
@@ -40,7 +40,7 @@ A professional-grade, scalable car rental web application that allows users to b
 package.json
 README.md
 
-
+```
 ---
 
 ## ⚙️ Tech Stack
