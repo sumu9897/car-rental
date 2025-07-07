@@ -59,8 +59,8 @@ README.md
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/car-rental-app.git
-cd car-rental-app
+git clone https://github.com/sumu9897/car-rental.git
+cd car-rental
 ```
 
 ### 2. Install dependencies
