@@ -10,8 +10,14 @@ const Hero = () => {
       </h1>
       <form className="flex flex-col md:flex-row items-start md:items-center justify-between p-6 rounded-lg md:rounded-full w-full max-w-80 md:max-w-200 bg-white shadow-[0px_8px_20px_rgbe(0,0,0,0.1)]">
         <div className="flex flex-col md:flex-row items-start md:items-center gap-10 min-md:ml-8">
+          {/* Pickup Location Selector */}
+
           <div className="flex flex-col items-start gap-2">
-            <select required value={pickupLocation} onChange={(e)=> setPickupLocation(e.target.value)}>
+            <select
+              required
+              value={pickupLocation}
+              onChange={(e) => setPickupLocation(e.target.value)}
+            >
               <option value="">Pickup Location</option>
               {cityList.map((city) => (
                 <option key={city} value={city}>
@@ -23,22 +29,43 @@ const Hero = () => {
               {pickupLocation ? pickupLocation : "Please select location"}
             </p>
           </div>
+          {/* Return Date Input */}
 
           <div className="flex flex-col items-start gap-2">
             <label htmlFor="pickup-date">Pick-up Date</label>
-            <input type="date" id="pickup-date" min={new Date().toISOString().split('T')[0]} className="text-sm text-gray-500" required/>
+            <input
+              type="date"
+              id="pickup-date"
+              min={new Date().toISOString().split("T")[0]}
+              className="text-sm text-gray-500"
+              required
+            />
           </div>
+          {/* Return Date Input */}
 
           <div className="flex flex-col items-start gap-2">
             <label htmlFor="return-date">Return Date</label>
-            <input type="date" id="return-date" className="text-sm text-gray-500" required/>
+            <input
+              type="date"
+              id="return-date"
+              className="text-sm text-gray-500"
+              required
+            />
           </div>
-          
         </div>
+
+        {/* Search Button */}
         <button className="flex items-center justify-center gap-1 px-9 py-3 max-sm:mt-4 bg-primary hover:bg-primary-dull text-white rounded-full cursor-pointer">
-            <img src={assets.search_icon} alt="search" className="brightness-300"/>
-            Search</button>
+          <img
+            src={assets.search_icon}
+            alt="search"
+            className="brightness-300"
+          />
+          Search
+        </button>
       </form>
+      {/* Hero image section */}
+
       <img src={assets.main_car} alt="car" className="max-h-74" />
     </div>
   );
