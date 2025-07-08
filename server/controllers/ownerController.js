@@ -19,7 +19,7 @@ export const changeRoleToOwner = async (req, res) => {
 
 export const addCar = async (req, res) => {
   try {
-    const { _id } = req.User;
+    const { _id } = req.user;
     let car = JSON.parse(req.body.carData);
 
     const imageFile = req.file;
@@ -28,7 +28,7 @@ export const addCar = async (req, res) => {
     const fileBuffer = fs.readFileSync(imageFile.path);
     const response = await imagekit.upload({
       file: fileBuffer,
-      fileName: imageFile.origanalname,
+      fileName: imageFile.originalname,
       folder: "/cars",
     });
 
