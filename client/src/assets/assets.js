@@ -152,7 +152,7 @@ export const dummyCarData = [
         "pricePerDay": 200,
         "location": "Los Angeles",
         "description": "The Jeep Wrangler is a mid-size luxury SUV produced by Jeep. The Wrangler made its debut in 2003 as the first SUV ever produced by Jeep.",
-        "isAvaliable": true,
+        "isAvaliable": false,
         "createdAt": "2025-04-16T08:34:39.592Z",
     },
     {
