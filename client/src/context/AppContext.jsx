@@ -19,7 +19,7 @@ export const AppProvider = ({ children }) => {
   const [isOwner, setIsOwner] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
   const [pickupDate, setPickupDate] = useState("");
-  const [returnDate, setreturnDate] = useState("");
+  const [returnDate, setReturnDate] = useState("");
   const [cars, setCars] = useState([]);
 
   // Fetch user info if logged in
@@ -96,7 +96,7 @@ export const AppProvider = ({ children }) => {
     pickupDate,
     setPickupDate,
     returnDate,
-    setreturnDate,
+    setReturnDate,
   };
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
