@@ -27,3 +27,4 @@ dist-ssr
 .env
 
 owner
+vercel.json
