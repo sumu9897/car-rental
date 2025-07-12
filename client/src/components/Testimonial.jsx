@@ -6,45 +6,41 @@ import { motion } from "motion/react";
 const Testimonial = () => {
   const testimonials = [
     {
-      name: "Emma Rodriguez",
-      location: "Barcelona, Spain",
+      name: "Ayesha Rahman",
+      location: "Dhaka, Bangladesh",
       image: assets.testimonial_image_1,
       testimonial:
-        "I've rented cars from various companies, but the experience with CarRental was exceptional.",
+        "CarRental made it so easy to get around Dhaka. Their service was reliable and affordable.",
     },
     {
-      name: "Liam Johnson",
-      location: "New York, USA",
+      name: "Rafiq Islam",
+      location: "Chittagong, Bangladesh",
       image: assets.testimonial_image_2,
       testimonial:
-        " CarRental made my trip so much easier. The car was delivered right to my door, and the customer service was fantastic!",
+        "Excellent customer support and a great fleet of cars. I had a smooth rental experience with CarRental.",
     },
     {
-      name: "Sophia Lee",
-      location: "Seoul, South Korea",
-      image: assets.testimonial_image_1,
+      name: "Farhana Akter",
+      location: "Sylhet, Bangladesh",
+      image: assets.testimonial_image_3,
       testimonial:
-        "I highly recommend CarRental! Their fleet is amazing, and I always feel like I'm getting the best deal with excellent service.",
+        "I highly recommend CarRental for anyone visiting Bangladesh. Their cars are well maintained and drivers are professional.",
     },
   ];
   return (
     <div className="py-28 px-6 md:px-16 lg:px-24 xl:px-44">
       <Title
-        title="What Our Customers Say "
-        subTitle="Discover why discerning travelers choose StayVenture for their luxury accommodations around the world"
+        title="What Our Customers Say"
+        subTitle="Discover why travelers across Bangladesh trust CarRental for their transportation needs"
       />
-      {/* <div className='flex flex-col justify-center items-center text-center'>
-                <h1 className='text-4xl md;text-[40px]'>Customer Testimonials</h1>
-                <p className='text-sm md:text-base text-gray-500/90'>Hear what our users say about us. We're always looking for ways to improve. If you have a positive experience with us, leave a review.</p>
-            </div> */}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-18">
         {testimonials.map((testimonial, index) => (
           <motion.div
-          initial={{opacity: 0, y:40}}
-          whileInView={{opacity: 1, y: 0}}
-          transition={{duration: 0.6, delay: index * 0.2, ease: 'easeOut'}}
-          viewport={{once: true, amount: 0.3}}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.2, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
             key={index}
             className="bg-white p-6 rounded-xl shadow-lg hover:-translate-y-1 transition-all duration-500"
           >
@@ -55,7 +51,7 @@ const Testimonial = () => {
                 alt={testimonial.name}
               />
               <div>
-                <p className=" text-xl">{testimonial.name}</p>
+                <p className="text-xl">{testimonial.name}</p>
                 <p className="text-gray-500">{testimonial.location}</p>
               </div>
             </div>

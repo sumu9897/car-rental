@@ -124,6 +124,6 @@ IMAGEKIT_URL_ENDPOINT=https://ik.imagekit.io/your_id
 
 ### 📸 Sample Car Listing
 **BMW X5 (SUV 2022)**  
-💺 5 Seats | ⚙️ Automatic | ⛽ Gasoline  
-📍 Location: Los Angeles  
-💵 $100/day
+💺 5 Seats | ⚙️ Automatic | ⛽ Gas 
+📍 Location: Dhaka  
+💵 ৳4500/day

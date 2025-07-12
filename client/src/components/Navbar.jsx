@@ -38,7 +38,7 @@ const Navbar = () => {
       }`}
     >
       <Link to={"/"}>
-        <motion.img whileHover={{scale: 1.05}} src={assets.logo} alt="logo" className="h-8" />
+        <motion.img whileHover={{scale: 1.05}} src={assets.logo} alt="logo" className="h-20" />
       </Link>
 
       <div

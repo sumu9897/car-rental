@@ -23,7 +23,7 @@ const Footer = () => {
           <motion.img
           initial={{ opacity: 0}}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.3 }} src={assets.logo} alt="Company Logo" className="h-8 md:h-9" />
+          transition={{ duration: 0.5, delay: 0.3 }} src={assets.logo} alt="Company Logo" className="h-16 md:h-20" />
           <motion.p initial={{ opacity: 0}}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}  className="max-w-80 mt-3">
